@@ -609,7 +609,7 @@ h2 {
   margin: 22px 0px 64px;
   font-weight: 300;
   line-height: 8vw;
-  letter-spacing: -.4vw;
+  letter-spacing: 0;
   font-family: Lato, sans-serif;
 }
 
@@ -643,6 +643,8 @@ h2 {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  max-width: 363px;
+  max-height: 103px;
 }
 
 .home__content .home__content-main .banner .content .video__button img {
@@ -730,7 +732,7 @@ h2 {
 
 .home__content .home__content-second .home__accordion .accordion {
   background-color: transparent;
-  color: #444;
+  color: #000000;
   cursor: pointer;
   width: 70vw;
   text-align: left;
@@ -750,9 +752,11 @@ h2 {
 
 .home__content .home__content-second .home__accordion .accordion img {
   opacity: 0.3;
-  margin-left: 2vw;
+  margin-left: 10px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
+  position: relative;
+  top: 3px;
 }
 
 .home__content .home__content-second .home__accordion h3 {
@@ -777,7 +781,7 @@ h2 {
 }
 
 .home__content .home__content-second .panel .p {
-  padding: 16px 0 32px;
+  margin-bottom: 40px;
   font-size: 5vw;
 }
 
@@ -793,7 +797,7 @@ h2 {
 .work {
   position: relative;
   z-index: 30;
-  margin: 64px 0px 48px;
+  margin: 100px 0px 48px;
 }
 
 .work__line {
@@ -803,7 +807,7 @@ h2 {
 
 .work__content .work__content-title h2 {
   font-size: 8vw;
-  margin: 0 0 38px;
+  margin: 0 0 50px;
 }
 
 .work__content .work__examples .work__examples-block {
@@ -814,7 +818,7 @@ h2 {
 .work__content .work__examples .work__examples-block img {
   display: block;
   border-radius: 7px;
-  margin: 0px 0px 22px;
+  margin: 0px 0px 25px;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
   -webkit-transform-style: preserve-3d;
@@ -847,6 +851,7 @@ h2 {
 .work__content .work__examples .work__examples-block p {
   font-size: 5vw;
   margin: 6.4px 0px 0px;
+  line-height: 100%;
   color: #999;
 }
 
@@ -946,10 +951,14 @@ h2 {
 
   }
 
-  .work__content .work__examples .work__examples-block h3,
+ 
   .work__content .work__examples .work__examples-block p {
     line-height: 100%;
   }
+  .work__content .work__examples .work__examples-block h3 {
+    line-height: 30px;
+  }
+
 }
 
 @media screen and (min-width: 766px) {
@@ -1126,7 +1135,7 @@ h2 {
   }
 
   .header__body {
-    height: 80px;
+    max-height: 70px;
   }
 
   .home__content .home__content-main p {
@@ -1164,7 +1173,7 @@ h2 {
   }
 
   .home__content .home__content-second .home__content-second-wrapper .p {
-    width: 450px;
+    max-width: 502px;
     font-size: 20px;
     line-height: 160%;
   }
