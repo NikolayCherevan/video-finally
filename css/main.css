@@ -1157,6 +1157,7 @@ h2 {
   .home__content .home__content-main h1 span {
     font-size: 72px;
     letter-spacing: 0;
+    line-height: 120%;
   }
 
   .home__content .home__content-second {
