@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $('.header__burger').click(function(event) {
       $('.header__burger, .header__menu, .top, .bottom, .home, .work,.process').toggleClass('active');
       $('body').toggleClass('lock');
@@ -15,6 +16,13 @@ $(document).ready(function() {
       $(this).prev().css( "transform", "scale3d(1, 1, 1)");
     }
   );
+
+  $( window ).resize(function() {
+
+    $('.screen').width($('.banner').width());
+    $('.screen').height($('.banner').height())
+  });
+
 })
 
 
@@ -23,9 +31,9 @@ tag.src = 'https://www.youtube.com/player_api';
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var tv,
-    playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 1, controls: 1, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
+    playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 1, controls: 1, disablekb: 0, enablejsapi: 0, iv_load_policy: 3};
 var vid = [
-  {'videoId': 'uTquP1KWFho', 'startSeconds': 0, 'endSeconds': 105, 'suggestedQuality': 'hd720'} 
+  {'videoId': 'Q5763pPchvw', 'startSeconds': 0, 'endSeconds': 105, 'suggestedQuality': 'hd720'} 
 ],
     randomvid = Math.floor(Math.random() * (vid.length - 1 + 1));
 
@@ -44,14 +52,27 @@ function stopVideo(){
 window.onload = function() {
 
     let trailer = document.querySelector(".trailer");
-    document.querySelector('.video__button').addEventListener('click',  function() {
+    document.querySelector('.video__button').addEventListener('click',  function(event) {
+      event.preventDefault();
+      $('.screen').width($('.banner').width());
+      $('.screen').height($('.banner').height())
       document.querySelector('.bg-overlay').style.cssText = "opacity: 1; z-index: 11111"
       onPlayerReady();
-      document.querySelector('.banner').style.cssText = "display: none"
+      // document.querySelector('.banner').style.cssText = "display: none"
       trailer.classList.add("active");
     }
+  
     
       );
+      document.querySelector('.banner').addEventListener('click',  function(event) {
+        event.preventDefault();
+        $('.screen').width($('.banner').width());
+        $('.screen').height($('.banner').height())
+        document.querySelector('.bg-overlay').style.cssText = "opacity: 1; z-index: 11111"
+        onPlayerReady();
+        // document.querySelector('.banner').style.cssText = "display: none"
+        trailer.classList.add("active");
+      });
       document.querySelector('.bg-overlay').addEventListener('click',  function() {
         stopVideo()
         trailer.classList.remove("active");
