@@ -801,7 +801,7 @@ h2 {
 .work {
   position: relative;
   z-index: 30;
-  margin: 100px 0px 48px;
+  margin: 100px 0px 50px;
 }
 
 .work__line {
@@ -1247,6 +1247,6 @@ h2 {
   }
 
   .process__content .title {
-    line-height: 6vw;
+    line-height: 120%;
   }
 }
