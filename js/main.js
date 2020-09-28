@@ -52,7 +52,7 @@ window.onload = function() {
 // tv.pauseVideo();
 function onPlayerStateChange(e) {
   if (e.data === 1){
-    $('#tv').addClass('activ  e');
+    $('#tv').addClass('active');
   } else if (e.data === 0){
     tv.seekTo(vid[randomvid].startSeconds)
   }

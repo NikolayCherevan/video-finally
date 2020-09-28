@@ -571,10 +571,7 @@ h2 {
   transform: translateY(0);
 }
 
-html.bg {
-  overflow: hidden;
-  position: relative;
-}
+
 
 .bg-overlay{
   content: "";
