@@ -31,9 +31,9 @@ tag.src = 'https://www.youtube.com/player_api';
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var tv,
-    playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 1, controls: 1, disablekb: 0, enablejsapi: 0, iv_load_policy: 3};
+    playerDefaults = {autoplay: 1, border: 0, autohide: 1, modestbranding: 0, rel: 0, showinfo: 1, controls: 1, disablekb: 0, enablejsapi: 0, iv_load_policy: 3};
 var vid = [
-  {'videoId': 'Q5763pPchvw', 'startSeconds': 0, 'endSeconds': 105, 'suggestedQuality': 'hd720'} 
+  {'videoId': '7oEDgtjBiw8', 'startSeconds': 0, 'endSeconds': 105, 'suggestedQuality': 'hd720'} 
 ],
     randomvid = Math.floor(Math.random() * (vid.length - 1 + 1));
 
