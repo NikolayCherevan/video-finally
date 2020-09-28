@@ -878,10 +878,6 @@ h2 {
   font-weight: 300;
 }
 
-.process__content .process__main .process__main-block {
-
-}
-
 .process__content .process__main .process__main-block img {
   width: 32px;
   height: 32px;
@@ -1107,7 +1103,7 @@ h2 {
 
   .process__content .process__main .process__main-block {
     width: 47%;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
   }
 
   .process__content .process__main .process__main-block img {
