@@ -3,7 +3,7 @@ $(document).ready(function() {
       $('.header__burger, .header__menu, .top, .bottom, .home, .work,.process').toggleClass('active');
       $('body').toggleClass('lock');
   })
-  
+  new WOW().init();
 })
 
 
