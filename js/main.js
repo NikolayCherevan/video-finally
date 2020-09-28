@@ -98,7 +98,7 @@ function toggle() {
     home.classList.toggle('bg');
 
 
-    video.pause();
+
     video.currentTime = 0;
 };
 

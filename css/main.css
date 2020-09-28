@@ -440,6 +440,7 @@ h2 {
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
   cursor: pointer;
+  right: 40px;
 }
 
 .header .header__burger:before,
@@ -450,8 +451,7 @@ h2 {
   width: 20px;
   height: 2px;
   left: 0;
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+  transition: 300ms opacity 300ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .header .header__burger:before {
@@ -880,9 +880,10 @@ h2 {
 
 .process__content .process__main .process__main-block strong {
   display: block;
-  margin: 22px 0px 6.4px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   font-size: 5vw;
-  line-height: 6.5vw;
+
 }
 
 .process__content .process__main .process__main-block p {
@@ -942,8 +943,7 @@ h2 {
   .home__content .home__content-second .home__content-second-wrapper .panel .p {
     font-size: 3vw;
     line-height: 40px;
-    margin-top: 2vw;
-    margin-bottom: 5vw;
+
   }
 
   .work__content .work__examples .work__examples-block h3,
@@ -959,16 +959,15 @@ h2 {
 
   .header__content .header__menu {
     width: 338px;
-    height: 303px;
+    display: inline-table;
     position: absolute;
     background-color: #2ba5e5;
     padding: 0;
     padding-left: 21px;
     padding-top: 19px;
-    left: 50%;
+
     top: -425%;
-    -webkit-transform: translate(13%, 0%);
-    transform: translate(13%, 0%);
+    left: calc(100% - 400px);
   }
 
   .header__content .header__menu li {
@@ -976,17 +975,16 @@ h2 {
   }
 
   .header__content .header__menu.active {
-    top: 0;
+    top: 15px;
     -webkit-box-shadow: 0 27px 53px 0 rgba(1, 93, 140, 0.24);
     box-shadow: 0 27px 53px 0 rgba(1, 93, 140, 0.24);
-    -webkit-transform: translate(13%, 4%);
-    transform: translate(13%, 4%);
+    -webkit-transform: translate(13%, 0%);
+
   }
 
   .header__content .header__list-bottom .bottom {
     opacity: 0;
-    -webkit-transform: translate(290px, 50px);
-    transform: translate(290px, 50px);
+
   }
 
   .header__content .header__list-bottom .bottom.active {
@@ -1041,8 +1039,8 @@ h2 {
   }
 
   .home__content .home__content-second .home__content-second-wrapper .panel .p {
-    font-size: 2vw;
-    line-height: 3.5vw;
+    font-size: 20px;
+    line-height: 160%;
   }
 
   .work__content .work__content-title h2 {
@@ -1110,9 +1108,9 @@ h2 {
   }
 
   .process__content .process__main .process__main-block p {
-    font-size: 3vw;
-    line-height: 6vw;
+    font-size: 20px;
     text-align: left;
+    line-height: 160%;
   }
 }
 
