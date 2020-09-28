@@ -4,6 +4,17 @@ $(document).ready(function() {
       $('body').toggleClass('lock');
   })
   new WOW().init();
+  $('').hover(function() {
+    $('.work__examples-block img').css('transform','scale3d(1.02, 1.02, 1)')
+  })
+
+  $( ".work__examples-block h3" ).hover(
+    function() {
+      $(this).prev().css( "transform","scale3d(1.02, 1.02, 1)" );
+    }, function() {
+      $(this).prev().css( "transform", "scale3d(1, 1, 1)");
+    }
+  );
 })
 
 
