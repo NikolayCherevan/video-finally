@@ -39,6 +39,21 @@ $(document).ready(function () {
       $('.header').removeClass('header-fixed')
     }
   });
+
+  var lastY;
+  $(document).bind('touchmove', function (e) {
+    var currentY = e.originalEvent.touches[0].clientY;
+    if (currentY > lastY) {
+      $('.header').removeClass('header-hide');
+      $('.header').addClass('header-fixed');
+    } else if (currentY < lastY) {
+      $('.header').addClass('header-hide')
+      $('.header').removeClass('header-fixed')
+    }
+    lastY = currentY;
+  });
+
+
 })
 
 
