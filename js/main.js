@@ -29,21 +29,39 @@ $(document).ready(function () {
     $('.screen').height($('.banner').height() - 5)
   });
 
-  $(window).bind('mousewheel', function (event) {
-    if (event.originalEvent.wheelDelta >= 0) {
-      if (!$(".header__menu").hasClass("active")) {
-        $('.header').removeClass('header-hide');
-        $('.header').addClass('header-fixed');
-      }
-    }
-    else {
-      if (!$(".header__menu").hasClass("active")) {
-        $('.header').addClass('header-hide')
-        $('.header').removeClass('header-fixed')
-      }
-    }
-  });
+  // $(window).bind('mousewheel', function (event) {
+  //   if (event.originalEvent.wheelDelta >= 0) {
 
+  //   }
+  //   else {
+
+  //   }
+  // });
+  function scrollDetect() {
+    var lastScroll = 0;
+
+    window.onscroll = function () {
+      let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
+
+      if (currentScroll > 0 && lastScroll <= currentScroll) {
+        lastScroll = currentScroll;
+
+        if (!$(".header__menu").hasClass("active")) {
+          $('.header').addClass('header-hide')
+          $('.header').removeClass('header-fixed')
+        }
+      } else {
+        lastScroll = currentScroll;
+        if (!$(".header__menu").hasClass("active")) {
+          $('.header').removeClass('header-hide');
+          $('.header').addClass('header-fixed');
+        }
+      }
+    };
+  }
+
+
+  scrollDetect();
   var lastY;
   $(document).bind('touchmove', function (e) {
     var currentY = e.originalEvent.touches[0].clientY;
