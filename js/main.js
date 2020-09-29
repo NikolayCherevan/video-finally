@@ -16,7 +16,13 @@ $(document).ready(function () {
       $(this).prev().css("transform", "scale3d(1, 1, 1)");
     }
   );
-
+  $(".work__examples-block img").hover(
+    function () {
+      $(this).css("transform", "scale3d(1.02, 1.02, 1)");
+    }, function () {
+      $(this).css("transform", "scale3d(1, 1, 1)");
+    }
+  );
   $(window).resize(function () {
 
     $('.screen').width($('.banner').width());
