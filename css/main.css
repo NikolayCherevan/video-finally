@@ -409,12 +409,13 @@ h2 {
   top: 0;
   left: 0;
   z-index: 31;
-  transition: all 2s;
+  transition: all 0.3s;
 }
 
 .header-hide {
   top: -75px;
 }
+
 .header-fixed {
   top: 0;
 }
@@ -538,7 +539,7 @@ h2 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 55px;
+  height: 61px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1032,9 +1033,8 @@ h2 {
     padding: 0;
     padding-left: 21px;
     padding-top: 19px;
-
     top: -425%;
-    left: calc(100% - 400px);
+    left: calc(100% - 375px);
   }
 
   .header__content .header__menu li {
@@ -1183,6 +1183,10 @@ h2 {
 }
 
 @media screen and (min-width: 1000px) {
+
+  .header .header__burger.active:before {
+    top: 10px;
+  }
 
   .process__content .process__main {
     display: grid;

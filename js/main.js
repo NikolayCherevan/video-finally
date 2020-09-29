@@ -31,12 +31,12 @@ $(document).ready(function () {
 
   $(window).bind('mousewheel', function (event) {
     if (event.originalEvent.wheelDelta >= 0) {
-      $('.header').removeClass('.header-hide');
-      $('.header').addClass('.header-fixed');
+      $('.header').removeClass('header-hide');
+      $('.header').addClass('header-fixed');
     }
     else {
-      $('.header').addClass('.header-hide')
-      $('.header').removeClass('.header-fixed')
+      $('.header').addClass('header-hide')
+      $('.header').removeClass('header-fixed')
     }
   });
 })
