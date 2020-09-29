@@ -112,11 +112,19 @@ window.onload = function () {
   document.querySelector('.video__button').addEventListener('click', function (event) {
     event.preventDefault();
 
-    const bannerH = $('.banner').height() - 4;
-
-    $('.screen').width($('.banner').width());
-    $('.screen').height(bannerH);
-
+    if($(window).width()>1000) {
+      const bannerH = $('.banner').height()+137;
+      const bannerW = $('.banner').width()+250;
+      $('.screen').width(bannerW);
+      $('.screen').height(bannerH);
+    }
+    else {
+      const bannerH = $('.banner').height()+2;
+      const bannerW = $('.banner').width()+4;
+      $('.screen').width(bannerW);
+      $('.screen').height(bannerH);
+    }
+  
 
     document.querySelector('.bg-overlay').style.cssText = "opacity: 1; z-index: 11111"
     onPlayerReady();
@@ -127,10 +135,20 @@ window.onload = function () {
   );
   document.querySelector('.banner').addEventListener('click', function (event) {
     event.preventDefault();
-    const bannerH = $('.banner').height() - 4;
+    if($(window).width()>1000) {
+      const bannerH = $('.banner').height()+137;
+      const bannerW = $('.banner').width()+250;
+      $('.screen').width(bannerW);
+      $('.screen').height(bannerH);
+    }
+    else {
+      const bannerH = $('.banner').height()+2;
+      const bannerW = $('.banner').width()+4;
+      $('.screen').width(bannerW);
+      $('.screen').height(bannerH);
+    }
+  
 
-    $('.screen').width($('.banner').width());
-    $('.screen').height(bannerH);
 
     document.querySelector('.bg-overlay').style.cssText = "opacity: 1; z-index: 11111"
     onPlayerReady();
