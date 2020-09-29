@@ -409,6 +409,14 @@ h2 {
   top: 0;
   left: 0;
   z-index: 31;
+  transition: all 2s;
+}
+
+.header-hide {
+  top: -75px;
+}
+.header-fixed {
+  top: 0;
 }
 
 .header:before {
@@ -1100,6 +1108,7 @@ h2 {
   .home__content .home__content-second .home__content-second-wrapper .panel .p {
     font-size: 20px;
     line-height: 160%;
+    margin-top: 0;
   }
 
   .work__content .work__content-title h2 {
@@ -1236,6 +1245,7 @@ h2 {
 
   .header {
     border-bottom: none;
+
   }
 
   .header__logo {
@@ -1302,14 +1312,14 @@ h2 {
 
   .home__content .home__content-second .home__content-second-wrapper .home__accordion {
     margin-top: 0;
-    width: 450px;
+
   }
 
   .home__content .home__content-second .home__content-second-wrapper .home__accordion .accordion {
     width: 100%;
     margin-top: 0px;
-    margin-bottom: 20px;
     cursor: pointer;
+    margin-bottom: 20px;
   }
 
   .home__content .home__content-second .home__content-second-wrapper .home__accordion .accordion h3 {

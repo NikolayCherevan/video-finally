@@ -29,6 +29,16 @@ $(document).ready(function () {
     $('.screen').height($('.banner').height() - 5)
   });
 
+  $(window).bind('mousewheel', function (event) {
+    if (event.originalEvent.wheelDelta >= 0) {
+      $('.header').removeClass('.header-hide');
+      $('.header').addClass('.header-fixed');
+    }
+    else {
+      $('.header').addClass('.header-hide')
+      $('.header').removeClass('.header-fixed')
+    }
+  });
 })
 
 
@@ -85,14 +95,14 @@ window.onload = function () {
     onPlayerReady();
     trailer.classList.add("active");
   });
-  $(window).scroll(function() {
-    if(($(window).scrollTop())> 1000) {
+  $(window).scroll(function () {
+    if (($(window).scrollTop()) > 1000) {
       stopVideo()
       trailer.classList.remove("active");
       document.querySelector('.bg-overlay').style.cssText = "display: none"
       document.querySelector('.banner').style.cssText = "display: block";
     }
-});
+  });
   document.querySelector('.bg-overlay').addEventListener('click', function () {
     stopVideo()
     trailer.classList.remove("active");
