@@ -113,8 +113,8 @@ window.onload = function () {
     event.preventDefault();
 
     if($(window).width()>1000) {
-      const bannerH = $('.banner').height()+137;
-      const bannerW = $('.banner').width()+250;
+      const bannerH = $('.banner').height()+329;
+      const bannerW = $('.banner').width()+589;
       $('.screen').width(bannerW);
       $('.screen').height(bannerH);
     }
@@ -136,8 +136,8 @@ window.onload = function () {
   document.querySelector('.banner').addEventListener('click', function (event) {
     event.preventDefault();
     if($(window).width()>1000) {
-      const bannerH = $('.banner').height()+137;
-      const bannerW = $('.banner').width()+250;
+      const bannerH = $('.banner').height()+329;
+      const bannerW = $('.banner').width()+589;
       $('.screen').width(bannerW);
       $('.screen').height(bannerH);
     }
