@@ -517,9 +517,7 @@ h2 {
 }
 
 .header__logo img {
-  max-width: 100%;
   min-width: 92px;
-  max-height: 26px;
   margin-top: 4px;
   margin-left: 4px;
 }
@@ -994,7 +992,6 @@ h2 {
 
   .home__content .home__content-second .home__content-second-wrapper .home__accordion .accordion h3 {
     font-size: 20px;
-    font-weight: 900;
   }
 
   .home__content .home__content-second .home__content-second-wrapper .panel .p {
@@ -1098,7 +1095,6 @@ h2 {
 
   .home__content .home__content-second .home__content-second-wrapper .home__accordion .accordion h3 {
     font-size: 24px;
-    font-weight: 900;
   }
 
   .home__content .home__content-second .home__content-second-wrapper .panel .p {
@@ -1178,8 +1174,55 @@ h2 {
 }
 
 @media screen and (min-width: 1000px) {
+
+  .process__content .process__main {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 50px;
+  }
+
+  .process__content .process__main .process__main-block strong {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "Lato Bold";
+  }
+
+  .process__content .process__main .process__main-block {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .work__content .work__examples .work__examples-block {
+    margin: 0px 0px 0px;
+    width: 100%;
+  }
+
+  .header .header__burger:before,
+  .header .header__burger:after {
+    height: 3px;
+    width: 30px
+  }
+
+  .header__burger {
+    height: 22px;
+  }
+
   .row {
-    padding: 0 40px;
+    padding: 0 74.2px;
+  }
+
+  .home {
+    margin-top: 200px;
+  }
+
+  .header__logo img {
+    width: 114px;
+    height: 32px;
+    margin-top: 3px;
+    margin-left: 0px;
   }
 
   .process__content .title span {
@@ -1214,7 +1257,7 @@ h2 {
   .home__content .home__content-main h1 {
     margin: 50px 0px 100px;
     font-size: 72px;
-    line-height: 100%;
+    line-height: 120%;
   }
 
   .home__content .home__content-main h1 span {
@@ -1271,7 +1314,7 @@ h2 {
 
   .home__content .home__content-second .home__content-second-wrapper .home__accordion .accordion h3 {
     font-size: 24px;
-    font-weight: 700;
+    font-family: "Lato Bold";
   }
 
   .home__content .home__content-second .title {
@@ -1286,28 +1329,23 @@ h2 {
   }
 
   .work__content .work__examples {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 50px;
   }
 
   .work__content .work__examples .work__examples-block {
-    width: 48%;
+    width: 100%;
   }
 
   .work__content .work__examples .work__examples-block h3,
   .work__content .work__examples .work__examples-block p {
     font-size: 20px;
-    line-height: 100%;
+    margin: 0;
+    line-height: 30px;
   }
 
   .home__content .home__content-main .trailer .close {
