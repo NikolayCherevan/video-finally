@@ -591,6 +591,10 @@ h2 {
   opacity: 0;
 }
 
+.bg-overlay:after{
+  content: '';
+  
+}
 .home.active,
 .work.active,
 .process.active {

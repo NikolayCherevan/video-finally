@@ -2719,6 +2719,38 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     animation-name: hinge;
 }
 
+.VideoHead-popup-video-exit {
+    position: absolute;
+    top: 19px;
+    right: 26px;
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.2s;
+}
+.VideoHead-popup-video-exit:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  .VideoHead-popup-video-exit-line-1 {
+    top: 11px;
+    left: 2px;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: #ffffff;
+  }
+  .VideoHead-popup-video-exit-line-2 {
+    top: 11px;
+    left: 2px;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: #ffffff;
+  }
+  
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollIn {
