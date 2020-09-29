@@ -1,7 +1,3 @@
-/* @font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato-Regular.ttf") format("ttf");
- } */
 /*
 Document
 ========
@@ -23,6 +19,52 @@ Use a more readable tab size (opinionated).
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
+}
+
+@font-face {
+  font-family: "Lato Black";
+  src:
+    url("../fonts/Lato-Black.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src:
+    url("../fonts/Lato-Regular.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato Light";
+  src:
+    url("../fonts/lato-light.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato Bold";
+  src:
+    url("../fonts/lato-bold.ttf") format("truetype");
+  /* Safari, Android, iOS */
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body * {
+  font-family: "Lato Regular", "sans-serif";
+  font-size: 18.75px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .screen {
@@ -49,17 +91,11 @@ Sections
 /**
 Remove the margin in all browsers.
 */
-body {
-  font-family: Lato, sans-serif;
-  margin: 0;
-}
 
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
-body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-}
+
 
 /*
 Grouping content
@@ -303,14 +339,7 @@ a:visited {
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-}
+
 
 a img {
   border: none;
@@ -335,7 +364,7 @@ body {
   margin: 0;
   min-height: 100%;
   background-color: #fff;
-  font-family: Lato, sans-serif;
+
   line-height: 20px;
 }
 
@@ -346,14 +375,11 @@ body {
   padding: 0 19px;
 }
 
-p {
-  font-family: Lato, sans-serif;
-  font-weight: 400;
-}
 
-.p {
+
+p {
   display: inline-block;
-  font-family: Lato, sans-serif;
+
   color: #000;
   font-size: 20px;
   line-height: 160%;
@@ -367,7 +393,7 @@ h2 {
   -webkit-box-ordinal-group: 1;
   -ms-flex-order: 0;
   order: 0;
-  font-family: Lato, sans-serif;
+
   color: #000;
   font-size: 48px;
   line-height: 120%;
@@ -376,7 +402,7 @@ h2 {
 }
 
 .header {
-  font-family: Lato, sans-serif;
+  border-bottom: 1px solid #ccc;
   position: fixed;
   width: 100%;
   background-color: #fff;
@@ -439,12 +465,12 @@ h2 {
   z-index: 22;
   display: block;
   position: relative;
-  width: 20px;
-  height: 20px;
+  min-width: 28px;
+  height: 23px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
   cursor: pointer;
-  right: 40px;
+
 }
 
 .header .header__burger:before,
@@ -452,9 +478,9 @@ h2 {
   content: "";
   background-color: #000;
   position: absolute;
-  width: 20px;
+  width: 27px;
   height: 2px;
-  left: 0;
+  left: -2px;
   transition: 300ms opacity 300ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -474,7 +500,7 @@ h2 {
 .header .header__burger.active:before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: 9px;
+  top: 12px;
 }
 
 .header .header__burger.active:after {
@@ -492,6 +518,10 @@ h2 {
 
 .header__logo img {
   max-width: 100%;
+  min-width: 92px;
+  max-height: 26px;
+  margin-top: 4px;
+  margin-left: 4px;
 }
 
 .header__body {
@@ -502,7 +532,7 @@ h2 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 50px;
+  height: 55px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -577,7 +607,7 @@ h2 {
 
 
 
-.bg-overlay{
+.bg-overlay {
   content: "";
   position: fixed;
   top: 0;
@@ -591,10 +621,11 @@ h2 {
   opacity: 0;
 }
 
-.bg-overlay:after{
+.bg-overlay:after {
   content: '';
-  
+
 }
+
 .home.active,
 .work.active,
 .process.active {
@@ -603,29 +634,31 @@ h2 {
 }
 
 .home {
-  margin-top: 200px;
+  margin-top: 150px;
   position: relative;
 
 }
 
 .home__content .home__content-main p {
-  font-size: 16px;
+  font-size: 18.75px;
 }
 
 .home__content .home__content-main h1 {
-  font-size: 35px;
+  font-size: 40.5px;
+  line-height: 12vw;
+  letter-spacing: -.4vw;
   margin: 22px 0px 64px;
   font-weight: 300;
-  line-height: 8vw;
-  letter-spacing: 0;
-  font-family: Lato, sans-serif;
+  font-family: "Lato Light";
+
 }
 
 .home__content .home__content-main h1 span {
   font-weight: 900;
-  font-size: 6.8vw;
-  letter-spacing: .8px;
-  font-family: Lato, sans-serif;
+  font-size: 40.5px;
+  letter-spacing: -.4vw;
+  font-family: "Lato Black";
+
 }
 
 .home__content .home__content-main .banner {
@@ -721,22 +754,23 @@ h2 {
 }
 
 .home__content .home__content-second {
-  margin: 64px 0;
+  margin: 75px 0;
 }
 
 .home__content .home__content-second .title {
-  font-size: 26px;
-  margin: 0 0 38px;
+  font-size: 30px;
+  font-family: "Lato Black";
+  margin: 0 0 45px;
 }
 
 .home__content .home__content-second .p {
-  font-size: 16px;
   letter-spacing: 0px;
   line-height: 22px;
+  line-height: 7.5vw;
 }
 
 .home__content .home__content-second .home__accordion {
-  margin: 32px 0px 0px;
+  margin: 37.5px 0px 0px;
 }
 
 .home__content .home__content-second .home__accordion .accordion {
@@ -750,7 +784,7 @@ h2 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   position: relative;
-  margin-top: 16px;
+  margin-top: 18.75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,10 +803,9 @@ h2 {
 }
 
 .home__content .home__content-second .home__accordion h3 {
-  font-size: 16px;
-  font-family: Lato, sans-serif;
   font-weight: 900;
-  letter-spacing: -.7px;
+  font-family: "Lato Black";
+  letter-spacing: -.3px;
   cursor: pointer;
 }
 
@@ -791,6 +824,7 @@ h2 {
 
 .home__content .home__content-second .panel .p {
   margin-bottom: 40px;
+  margin-top: 18.75px;
   font-size: 5vw;
 }
 
@@ -806,7 +840,7 @@ h2 {
 .work {
   position: relative;
   z-index: 30;
-  margin: 100px 0px 50px;
+  margin: 75px 0px 50px;
 }
 
 .work__line {
@@ -816,7 +850,8 @@ h2 {
 
 .work__content .work__content-title h2 {
   font-size: 8vw;
-  margin: 0 0 50px;
+  margin: 0 0 45px;
+  font-family: "Lato Black";
 }
 
 .work__content .work__examples .work__examples-block {
@@ -853,7 +888,7 @@ h2 {
   line-height: 30px;
   font-weight: 900;
   letter-spacing: -0.2px;
-  font-family: Lato, sans-serif;
+  font-family: "Lato Black";
   cursor: pointer;
 }
 
@@ -865,35 +900,46 @@ h2 {
 }
 
 .process {
+
   position: relative;
   z-index: 30;
   margin-top: 48px;
   margin-bottom: 64px;
+
 }
 
 .process__content .title {
+
   font-size: 8vw;
   line-height: 9vw;
-  font-weight: 900;
+  font-family: "Lato Black";
   color: #000;
-  font-family: Lato, sans-serif;
 }
 
 .process__content .title span {
   font-weight: 300;
+  font-family: "Lato Light";
+  font-size: 30px;
+}
+
+.process__content .process__main {
+  margin-top: 45px;
+}
+
+.process__content .process__main .process__main-block {
+  margin-top: 45px;
 }
 
 .process__content .process__main .process__main-block img {
-  width: 32px;
-  height: 32px;
+  width: 37.5px;
+  height: 37.5px;
 }
 
 .process__content .process__main .process__main-block strong {
   display: block;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-size: 5vw;
-
+  margin-top: 26.25px;
+  margin-bottom: 7.5px;
+  font-family: "Lato Black";
 }
 
 .process__content .process__main .process__main-block p {
@@ -957,10 +1003,11 @@ h2 {
 
   }
 
- 
+
   .work__content .work__examples .work__examples-block p {
     line-height: 100%;
   }
+
   .work__content .work__examples .work__examples-block h3 {
     line-height: 30px;
   }
@@ -1015,7 +1062,7 @@ h2 {
   }
 
   .header__body {
-    height: 72px;
+    height: 70px;
   }
 
   .home__content .home__content-main p {
@@ -1027,7 +1074,8 @@ h2 {
   .home__content .home__content-main h1 {
     margin: 31px 0px 92px;
     font-size: 9.8vw;
-    letter-spacing: 0vw;
+    line-height: 8vw;
+    letter-spacing: 0;
   }
 
   .home__content .home__content-second {
@@ -1134,6 +1182,15 @@ h2 {
     padding: 0 40px;
   }
 
+  .process__content .title span {
+    font-size: 72px;
+  }
+
+  .work {
+
+    margin: 100px 0px 50px;
+  }
+
   .header__logo {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 150px;
@@ -1181,8 +1238,8 @@ h2 {
     align-items: stretch;
     grid-auto-flow: row;
     grid-template-areas:
-        ". ."
-        "Area Area";
+      ". ."
+      "Area Area";
     -ms-grid-columns: 1fr 50px 1fr;
     -ms-grid-rows: auto;
     grid-template-rows: auto;
