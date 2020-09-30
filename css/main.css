@@ -768,7 +768,7 @@ h2 {
   font-size: 30px;
   font-family: "Lato Black";
   margin: 0 0 45px;
-  letter-spacing: 0.1px;
+  letter-spacing: -.3vw;
 }
 
 .home__content .home__content-second .p {
@@ -1403,5 +1403,20 @@ font-size: 16px;
 }
 .home__content .home__content-main h1 span {
   font-size: 10.8vw;
+}
+.home__content .home__content-second .title {
+  font-size: 8vw;
+  letter-spacing: -.3vw;
+}
+.home__content .home__content-second .home__accordion h3 {
+  font-size: 16px;
+}
+.home__content .home__content-second .home__accordion .accordion {
+  margin-top: 16px;
+}
+.work__content .work__content-title h2 {
+  margin: 0 0 38.4px;
+  letter-spacing: -.3vw;
+}
 }
 }
