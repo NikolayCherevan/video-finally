@@ -1406,6 +1406,7 @@ font-size: 16px;
 }
 .home__content .home__content-second .title {
   font-size: 8vw;
+  margin-bottom: 12vw;
   letter-spacing: -.3vw;
 }
 .home__content .home__content-second .home__accordion h3 {
@@ -1414,8 +1415,15 @@ font-size: 16px;
 .home__content .home__content-second .home__accordion .accordion {
   margin-top: 16px;
 }
+.home__content .home__content-second .home__accordion {
+  margin: 32px 0px 0px;
+}
 .work__content .work__content-title h2 {
   margin: 0 0 38.4px;
   letter-spacing: -.3vw;
+}
+.home__content .home__content-second {
+  margin-top: 20vw;
+  margin-bottom: 20vw;
 }
 }
