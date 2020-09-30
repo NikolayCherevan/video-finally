@@ -29,6 +29,7 @@ $(document).ready(function() {
         if ($(window).width() > 470) {
             $('.video').css('height', 'inherit');
         }
+        $('.video').css('min-height', 'inherit');
         $('.screen').width($('.banner').width());
         $('.screen').height($('.banner').height() - 5)
     });
@@ -118,20 +119,24 @@ window.onload = function() {
             event.preventDefault();
 
             if ($(window).width() > 1000) {
+                $('.video').css('min-height', 'inherit');
                 const bannerH = $('.banner').height() + 329;
                 const bannerW = $('.banner').width() + 589;
                 $('.screen').width(bannerW);
                 $('.screen').height(bannerH);
+            } else if (($(window).width() > 1000) && ($(window).width() < 1450)) {
+                // const bannerH = $('.banner').height() + 11;
+                // const bannerW = $('.banner').width() + 26;
+                console.log('ok')
+                $('.screen').width($(window).width() - 152);
+                $('.screen').height($(window).height() - 200);
             } else {
                 $('.video').css('height', 'inherit');
-
                 const bannerH = $('.banner').height() + 11;
                 const bannerW = $('.banner').width() + 26;
                 $('.screen').width(bannerW);
                 $('.screen').height(bannerH);
             }
-
-
             document.querySelector('.bg-overlay').style.cssText = "opacity: 1; z-index: 11111"
             onPlayerReady();
             trailer.classList.add("active");
@@ -141,7 +146,17 @@ window.onload = function() {
     );
     document.querySelector('.banner').addEventListener('click', function(event) {
         event.preventDefault();
-        if ($(window).width() > 1000) {
+        if (($(window).width() > 1030) && ($(window).width() < 1450)) {
+            // const bannerH = $('.banner').height() + 11;
+            // const bannerW = $('.banner').width() + 26;
+            $('.screen').width($(window).width() - 152);
+            $('.screen').height($(window).height() - 220);
+
+        } else if (($(window).width() > 1000) && ($(window).width() < 1050)) {
+            $('.screen').width($(window).width() - 152);
+            $('.screen').height($(window).height() - 360);
+        } else if (($(window).width() > 1000)) {
+            $('.video').css('min-height', 'inherit');
             const bannerH = $('.banner').height() + 329;
             const bannerW = $('.banner').width() + 589;
             $('.screen').width(bannerW);
@@ -172,6 +187,9 @@ window.onload = function() {
         stopVideo();
         if ($(window).width() < 470) {
             $('.video').css('height', '30vh');
+        }
+        if ($(window).width() > 1000) {
+            $('.video').css('min-height', '675');
         }
         trailer.classList.remove("active");
         document.querySelector('.bg-overlay').style.cssText = "display: none"
