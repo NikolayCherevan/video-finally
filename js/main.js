@@ -119,8 +119,8 @@ window.onload = function () {
       $('.screen').height(bannerH);
     }
     else {
-      const bannerH = $('.banner').height()+2;
-      const bannerW = $('.banner').width()+4;
+      const bannerH = $('.banner').height()+11;
+      const bannerW = $('.banner').width()+26;
       $('.screen').width(bannerW);
       $('.screen').height(bannerH);
     }
@@ -142,8 +142,8 @@ window.onload = function () {
       $('.screen').height(bannerH);
     }
     else {
-      const bannerH = $('.banner').height()+2;
-      const bannerW = $('.banner').width()+4;
+      const bannerH = $('.banner').height()+11;
+      const bannerW = $('.banner').width()+26;
       $('.screen').width(bannerW);
       $('.screen').height(bannerH);
     }
