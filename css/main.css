@@ -861,7 +861,6 @@ h2 {
 .home__content .home__content-second .home__accordion h3 {
     font-weight: 900;
     font-family: "Lato Black";
-    letter-spacing: -.3px;
     cursor: pointer;
 }
 
@@ -1328,7 +1327,7 @@ h2 {
     }
     .home__content .home__content-second .title {
         font-size: 48px;
-        margin-bottom: 50px;
+        margin-bottom: 50px;.work__content .work__examples .work__examples-block p
     }
     .work__content .work__content-title h2 {
         font-size: 48px;
@@ -1347,12 +1346,17 @@ h2 {
     .work__content .work__examples .work__examples-block {
         width: 100%;
     }
-    .work__content .work__examples .work__examples-block h3,
-    .work__content .work__examples .work__examples-block p {
+    .work__content .work__examples .work__examples-block h3 {
         font-size: 20px;
         margin: 0;
         line-height: 30px;
         letter-spacing: normal;
+    }
+    .work__content .work__examples .work__examples-block p {
+        font-size: 20px;
+        margin: 0;
+        line-height: 160%;
+        letter-spacing: .2px;
     }
     .home__content .home__content-main .trailer .close {
         position: relative;
