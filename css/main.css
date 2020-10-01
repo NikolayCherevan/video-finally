@@ -997,6 +997,7 @@ h2 {
 }
 
 .div-block-48 {
+    position: relative;
     display: flex;
     width: 100%;
     height: 3vw;
@@ -1058,12 +1059,14 @@ h2 {
 
 .div-block-46.active .div-block-47.first {
     transform: rotate(45deg);
+    position: absolute;
+    max-width: 25px;
 }
 
 .div-block-46.active .div-block-47.second {
-    top: -8px;
     transform: rotate(-45deg);
-    position: relative;
+    position: absolute;
+    max-width: 25px;
 }
 
 @media screen and (min-width: 480px) {
