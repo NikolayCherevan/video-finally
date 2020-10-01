@@ -1402,6 +1402,7 @@ h2 {
     .home__content .home__content-second .home__accordion .accordion {
         margin-top: 5vw;
         line-height: 20px;
+        min-height: 26px;
     }
     .home__content .home__content-second .home__accordion {
         margin: 10vw 0px 0px;
