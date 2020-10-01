@@ -1506,6 +1506,9 @@ h2 {
 }
 
 @media screen and (min-width: 1000px) {
+    .accordion-item-trigger {
+        min-height: 50px;
+    }
     .work__line {
         margin-top: 100px;
         height: 1px;
@@ -1667,7 +1670,7 @@ h2 {
         opacity: .3;
         cursor: pointer;
         max-width: 24px;
-        top: -7px;
+        top: -3px;
         position: relative;
         max-height: 24px;
     }
