@@ -519,6 +519,7 @@ h2 {
     position: relative;
     min-width: 28px;
     height: 23px;
+    margin-right: -3px;
     -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
     cursor: pointer;
@@ -570,7 +571,7 @@ h2 {
 .header__logo img {
     min-width: 92px;
     margin-top: 4px;
-    margin-left: 4px;
+    margin-left: 0;
     height: 7vw;
 }
 
