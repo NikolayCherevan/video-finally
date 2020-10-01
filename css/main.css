@@ -1081,6 +1081,9 @@ h2 {
     .process {
         margin-top: 15vw;
     }
+    .home__content .home__content-main .banner .content .video {
+        height: 40vh;
+    }
     .process__content .title span {
         font-size: 10.8vw;
         line-height: 12vw;
