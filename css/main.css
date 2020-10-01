@@ -54,7 +54,7 @@ Use a more readable tab size (opinionated).
 
 @font-face {
     font-family: "Lato Light";
-    src: url("../fonts/lato-light.ttf") format("truetype");
+    src: url("../fonts/Lato-Light.ttf") format("truetype");
     /* Safari, Android, iOS */
     font-weight: normal;
     font-style: normal;
@@ -62,7 +62,7 @@ Use a more readable tab size (opinionated).
 
 @font-face {
     font-family: "Lato Bold";
-    src: url("../fonts/lato-bold.ttf") format("truetype");
+    src: url("../fonts/Lato-Bold.ttf") format("truetype");
     /* Safari, Android, iOS */
     font-weight: normal;
     font-style: normal;
@@ -579,9 +579,9 @@ h2 {
 }
 
 .header__logo img {
-    min-width: 92px;
+    min-width: 95px;
     margin-top: 4px;
-    margin-left: 0;
+    margin-left: -1px;
     height: 7vw;
 }
 
@@ -697,6 +697,7 @@ h2 {
 
 .home__content .home__content-main p {
     font-size: 18.75px;
+    
 }
 
 .home__content .home__content-main h1 {
@@ -850,7 +851,7 @@ h2 {
 
 .home__content .home__content-second .home__accordion .accordion img {
     opacity: 0.3;
-    margin-left: 10px;
+    margin-left: 11px;
     -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
     position: relative;
@@ -986,6 +987,7 @@ h2 {
 .process__content .process__main .process__main-block img {
     width: 37.5px;
     height: 37.5px;
+    padding-bottom: 0.2px;
 }
 
 .process__content .process__main .process__main-block strong {
@@ -998,7 +1000,7 @@ h2 {
 .process__content .process__main .process__main-block p {
     font-size: 5vw;
     letter-spacing: normal;
-    line-height: 7.5vw;
+    line-height: 7.3vw;
 }
 
 @media screen and (min-width: 425px) {
@@ -1376,6 +1378,7 @@ h2 {
 @media screen and (max-width: 479px) {
     .home__content .home__content-main p {
         font-size: 5vw;
+        letter-spacing: normal;
     }
     .home__content .home__content-main .banner .content .video {
         height: 30vh;
@@ -1386,13 +1389,14 @@ h2 {
     .home__content .home__content-main h1 {
         font-size: 10.8vw;
         margin-bottom: 20vw;
+        margin-top: 7vw;
     }
     .home__content .home__content-main h1 span {
         font-size: 10.8vw;
     }
     .home__content .home__content-second .title {
         font-size: 8vw;
-        margin-bottom: 12vw;
+        margin-bottom: 11.8vw;
         letter-spacing: -.3vw;
     }
     .home__content .home__content-second .home__accordion h3 {
@@ -1408,7 +1412,7 @@ h2 {
         margin: 10vw 0px 0px;
     }
     .work__content .work__content-title h2 {
-        margin-bottom: 12vw;
+        margin-bottom: 11.8vw;
         letter-spacing: -.3vw;
     }
     .row {
@@ -1426,10 +1430,12 @@ h2 {
     }
     .work__content .work__examples .work__examples-block h3 {
         line-height: 100%;
+        letter-spacing: -.3px;
     }
     .work__content .work__examples .work__examples-block p {
         margin-top: 2vw;
         line-height: 7.5vw;
+        letter-spacing: normal;
     }
     .work__content .work__examples .work__examples-block {
         margin-bottom: 10vw;
@@ -1443,7 +1449,7 @@ h2 {
         letter-spacing: -.3vw;
     }
     .process__content .process__main {
-        margin-top: 12vw;
+        margin-top: 11.8vw;
     }
     .process__content .process__main .process__main-block strong {
         margin-top: 7vw;
@@ -1452,6 +1458,6 @@ h2 {
         font-size: 5vw;
     }
     .process__content .process__main .process__main-block {
-        margin-top: 12vw;
+        margin-top: 11.8vw;
     }
 }
