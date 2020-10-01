@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-    $('.header__burger').click(function(event) {
-        $('.header__burger, .header__menu, .top, .bottom, .home, .work,.process').toggleClass('active');
+    $('.div-block-46').click(function(event) {
+        $('.div-block-46, .header__menu, .top, .bottom, .home, .work,.process').toggleClass('active');
         $('body').toggleClass('lock');
     })
     new WOW().init();
@@ -222,12 +222,13 @@ $('.hi span').on('click', function() {
         $(this).siblings('i').html('mute');
     }
 });
-let acc = document.getElementsByClassName("accordion");
+let acc = document.getElementsByClassName("accordion-item-trigger");
 let i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
+    acc[i].addEventListener("click", function openTabs() {
         this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("active");
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
