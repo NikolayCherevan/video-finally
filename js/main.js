@@ -5,6 +5,7 @@ $(document).ready(function() {
         $('body').toggleClass('lock');
     })
     new WOW().init();
+
     $('').hover(function() {
         $('.work__examples-block img').css('transform', 'scale3d(1.02, 1.02, 1)')
     })
@@ -48,12 +49,13 @@ $(document).ready(function() {
         window.onscroll = function() {
             let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
 
-            if (currentScroll > 0 && lastScroll <= currentScroll) {
+            if (currentScroll > 0 && lastScroll <= currentScroll && currentScroll >40) {
                 lastScroll = currentScroll;
-
+                
                 if (!$(".header__menu").hasClass("active")) {
                     $('.header').addClass('header-hide')
                     $('.header').removeClass('header-fixed')
+          
                 }
             } else {
                 lastScroll = currentScroll;
