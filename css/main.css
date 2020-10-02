@@ -20,10 +20,9 @@ Use a better box model (opinionated).
 Use a more readable tab size (opinionated).
 */
 
-:root {
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 .come-in {
@@ -419,6 +418,20 @@ body {
     min-height: 100%;
     background-color: #fff;
     line-height: 20px;
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: default;
 }
 
 .row {
