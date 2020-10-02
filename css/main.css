@@ -23,6 +23,12 @@ Use a better box model (opinionated).
     font-weight: 900;
 }
 
+@media screen and (min-width: 1000px) {
+    .lato-black-bold {
+        font-weight: 700;
+    }
+}
+
 
 /**
 Use a more readable tab size (opinionated).
@@ -1414,6 +1420,11 @@ h2 {
         font-size: 3vw;
         line-height: 5vw;
         letter-spacing: normal;
+    }
+    .home__content .home__content-second .home__content-second-wrapper .p.accord {
+        margin-top: 2vw;
+        margin-bottom: 5vw;
+        letter-spacing: .2px;
     }
     .heading-5 {
         margin-top: 0;
