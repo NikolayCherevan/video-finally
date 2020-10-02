@@ -83,12 +83,6 @@ body * {
     line-height: 20px;
 }
 
-.screen {
-    height: 100%;
-    width: 100%;
-}
-
-
 /**
 1. Correct the line height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -957,7 +951,6 @@ h2 {
 .process__content .process__main .process__main-block img {
     width: 37.5px;
     height: 37.5px;
-    padding-bottom: 0.2px;
 }
 
 .process__content .process__main .process__main-block strong {
@@ -1086,6 +1079,7 @@ h2 {
     }
     .home__content .home__content-main .banner .content .video {
         height: 40vh;
+        width: 100%;
     }
     .process__content .title span {
         font-size: 10.8vw;
@@ -1143,9 +1137,39 @@ h2 {
         letter-spacing: normal;
     }
     .home__content .home__content-main h1 {
-        margin: 29px 0px 85px;
+        margin: 7vw 0px 85px;
         font-size: 10.8vw;
         margin-bottom: 20vw;
+    }
+    .home__content .home__content-main .banner .content .video__button img {
+        min-width: 363px;
+        min-height: 103px;
+    }
+    .process__content .process__main .process__main-block {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .process__content .process__main {
+        margin-top: 0;
+    }
+    .process__content .process__main .process__main-block img {
+        max-width: 13%;
+        width: auto;
+        max-height: 50px;
+        height: auto;
+    }
+    .process__content .process__main .process__main-block strong {
+        font-family: "Lato Bold";
+        margin-top: 25px;
+        font-size: 24px;
+        margin-bottom: 20px;
+        line-height: 27px;
+    }
+    .process__content .process__main .process__main-block p {
+        font-size: 4vw;
+        line-height: 6vw;
+        letter-spacing: normal;
+
     }
     .home__content .home__content-main h1 span {
         font-size: 10.8vw;
@@ -1272,6 +1296,10 @@ h2 {
         -ms-flex-item-align: center;
         align-self: center;
     }
+    .home {
+        margin-top: 20vw;
+        margin-bottom: 0;
+    }
     .div-block-48 {
         display: -webkit-flex;
         display: flex;
@@ -1325,7 +1353,7 @@ h2 {
         left: calc(100% - 375px);
     }
     .home__content .home__content-main .banner .content .video {
-        max-height: 390px;
+        height: 390px;
     }
     .header__content .header__menu li {
         margin: 0;
@@ -1525,6 +1553,7 @@ h2 {
         height: 103px;
     }
     .home__content .home__content-main .banner .content .video {
+   
         min-height: 675px;
     }
     .home__content .home__content-main .banner .content .video__button {
@@ -1614,6 +1643,7 @@ h2 {
     .process__content .process__main .process__main-block strong {
         margin-top: 40px;
         margin-bottom: 20px;
+        line-height: 19px;
         font-family: "Lato Bold";
     }
     .process__content .process__main .process__main-block {
@@ -1784,6 +1814,7 @@ h2 {
     }
     .home__content .home__content-main .banner .content .video {
         height: 30vh;
+        width: 100%;
     }
     .home {
         margin-top: 40vw;
