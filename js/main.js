@@ -4,7 +4,7 @@ $(document).ready(function() {
         $('.div-block-46, .header__menu, .top, .bottom, .home, .work,.process').toggleClass('active');
         $('body').toggleClass('lock');
     })
-    new WOW().init();
+    new WOW({ mobile: false }).init();
 
     $('').hover(function() {
         $('.work__examples-block img').css('transform', 'scale3d(1.02, 1.02, 1)')
@@ -49,13 +49,13 @@ $(document).ready(function() {
         window.onscroll = function() {
             let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
 
-            if (currentScroll > 0 && lastScroll <= currentScroll && currentScroll >40) {
+            if (currentScroll > 0 && lastScroll <= currentScroll && currentScroll > 40) {
                 lastScroll = currentScroll;
-                
+
                 if (!$(".header__menu").hasClass("active")) {
                     $('.header').addClass('header-hide')
                     $('.header').removeClass('header-fixed')
-          
+
                 }
             } else {
                 lastScroll = currentScroll;
@@ -117,47 +117,63 @@ function stopVideo() {
 window.onload = function() {
 
     let trailer = document.querySelector(".trailer");
-    // document.querySelector('.video__button').addEventListener('click', function(event) {
-    //         event.preventDefault();
-
-    //         if ($(window).width() > 470) {
-    //             $('.video').css('height', 'inherit');
-    //         }
-    //         $('.video').css('min-height', 'inherit');
-    //         $('.screen').width($('.banner').width());
-    //         $('.screen').height($('.banner').height() - 5)
-    //         document.querySelector('.bg-overlay').style.cssText = "opacity: 1; z-index: 11111"
-    //         onPlayerReady();
-    //         trailer.classList.add("active");
-    //     }
-
-
-    // );
-    document.querySelector('.banner').addEventListener('click', function(event) {
+    document.querySelector('.video__button').addEventListener('click', function(event) {
         event.preventDefault();
-        if ($(window).width() < 470 ) {
+        if ($(window).width() < 470) {
             $('.video').css('height', 'inherit');
-            $('.screen').width($('.banner').width()-3);
-            $('.screen').height($('.banner').height()-5)
+            $('.screen').width($('.banner').width() - 3);
+            $('.screen').height($('.banner').height() - 5)
         }
-        if (($(window).width() < 1400) && ($(window).width() > 470) ) {
+        if (($(window).width() < 1400) && ($(window).width() > 470)) {
             $('.video').css('height', 'inherit');
-            $('.screen').width($('.banner').width()-3);
-            $('.screen').height($('.banner').height()-5)
+            $('.screen').width($('.banner').width() - 3);
+            $('.screen').height($('.banner').height() - 5)
         }
-        if (($(window).width() > 1024) && ($(window).width() < 1400) ) {
+        if (($(window).width() > 1024) && ($(window).width() < 1400)) {
             $('.video').css('height', 'inherit');
             $('.screen').width($('.banner').width());
-            $('.screen').height($('.banner').height()-90)
+            $('.screen').height($('.banner').height() - 90)
             console.log('planshet')
         }
         if ($(window).width() > 1400) {
             $('.video').css('height', 'inherit');
-            $('.screen').width($('.banner').width()+300);
-            $('.screen').height($('.banner').height()+ 90)
+            $('.screen').width($('.banner').width() + 300);
+            $('.screen').height($('.banner').height() + 90)
         }
 
-    
+
+
+
+
+        document.querySelector('.bg-overlay').style.cssText = "opacity: 1; z-index: 11111"
+        onPlayerReady();
+        trailer.classList.add("active");
+    });
+    document.querySelector('.banner').addEventListener('click', function(event) {
+        event.preventDefault();
+        if ($(window).width() < 470) {
+            $('.video').css('height', 'inherit');
+            $('.screen').width($('.banner').width() - 3);
+            $('.screen').height($('.banner').height() - 5)
+        }
+        if (($(window).width() < 1400) && ($(window).width() > 470)) {
+            $('.video').css('height', 'inherit');
+            $('.screen').width($('.banner').width() - 3);
+            $('.screen').height($('.banner').height() - 5)
+        }
+        if (($(window).width() > 1024) && ($(window).width() < 1400)) {
+            $('.video').css('height', 'inherit');
+            $('.screen').width($('.banner').width());
+            $('.screen').height($('.banner').height() - 90)
+            console.log('planshet')
+        }
+        if ($(window).width() > 1400) {
+            $('.video').css('height', 'inherit');
+            $('.screen').width($('.banner').width() + 300);
+            $('.screen').height($('.banner').height() + 90)
+        }
+
+
 
 
 
