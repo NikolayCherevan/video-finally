@@ -129,16 +129,23 @@ window.onload = function() {
             $('.screen').width($('.banner').width() - 3);
             $('.screen').height($('.banner').height() - 5)
         }
-        if (($(window).width() > 1024) && ($(window).width() < 1400)) {
+        if (($(window).width() >= 1024) && ($(window).width() < 1400)) {
             $('.video').css('height', 'inherit');
-            $('.screen').width($('.banner').width());
-            $('.screen').height($('.banner').height() - 90)
+            $('.screen').width($('.banner').width()-170);
+            $('.screen').height($('.banner').height() -245)
             console.log('planshet')
         }
-        if ($(window).width() > 1400) {
+        if (($(window).width() > 1400)  && ($(window).width() < 1500)) {
+            $('.video').css('height', 'inherit');
+            console.log(1)
+            $('.screen').width($('.banner').width()-230);
+            $('.screen').height($('.banner').height() -197)
+       
+        }
+        if ($(window).width() > 1500) {
             $('.video').css('height', 'inherit');
             $('.screen').width($('.banner').width() + 300);
-            $('.screen').height($('.banner').height() + 90)
+            $('.screen').height($('.banner').height() + 82)
         }
 
 
@@ -161,16 +168,23 @@ window.onload = function() {
             $('.screen').width($('.banner').width() - 3);
             $('.screen').height($('.banner').height() - 5)
         }
-        if (($(window).width() > 1024) && ($(window).width() < 1400)) {
+        if (($(window).width() >= 1024) && ($(window).width() < 1400)) {
             $('.video').css('height', 'inherit');
-            $('.screen').width($('.banner').width());
-            $('.screen').height($('.banner').height() - 90)
+            $('.screen').width($('.banner').width()- 170);
+            $('.screen').height($('.banner').height() - 245)
             console.log('planshet')
         }
-        if ($(window).width() > 1400) {
+        if (($(window).width() > 1400)  && ($(window).width() < 1500)) {
+            $('.video').css('height', 'inherit');
+            console.log(1)
+            $('.screen').width($('.banner').width()-230);
+            $('.screen').height($('.banner').height() -197)
+       
+        }
+        if ($(window).width() > 1500) {
             $('.video').css('height', 'inherit');
             $('.screen').width($('.banner').width() + 300);
-            $('.screen').height($('.banner').height() + 90)
+            $('.screen').height($('.banner').height() + 82)
         }
 
 
