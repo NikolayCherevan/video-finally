@@ -15,6 +15,14 @@ Use a better box model (opinionated).
     box-sizing: border-box;
 }
 
+.video {
+    transition: all .3s;
+}
+
+.content:hover .video {
+    transform: scale(1.01);
+}
+
 .lato-black-bold {
     font-weight: 900;
 }
