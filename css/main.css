@@ -8,8 +8,8 @@ Document
 Use a better box model (opinionated).
 */
 iframe {
-    width: 101vw!important;
-    height: calc(100vw/1.77)!important;
+    width: 90.5vw!important;
+    height: calc(90vw/1.77)!important;
 }
 
 *,
@@ -1577,7 +1577,7 @@ h2 {
         min-height: 50px;
     }
     iframe {
-        width: 90vw!important;
+        width: 89.9vw!important;
         height: calc(89.5vw/1.77)!important;
     }
     
