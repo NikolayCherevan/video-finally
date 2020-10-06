@@ -7,6 +7,10 @@ Document
 /**
 Use a better box model (opinionated).
 */
+iframe {
+    width: 100vw!important;
+    height: calc(100vw/1.77)!important;
+}
 
 *,
 *::before,
@@ -1572,6 +1576,11 @@ h2 {
     .accordion-item-trigger {
         min-height: 50px;
     }
+    iframe {
+        width: 90vw!important;
+        height: calc(89.5vw/1.77)!important;
+    }
+    
     .work__line {
         margin-top: 100px;
         height: 1px;
@@ -1933,4 +1942,6 @@ h2 {
     .process__content .process__main .process__main-block {
         margin-top: 11.8vw;
     }
+
 }
+
